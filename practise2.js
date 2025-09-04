@@ -1,10 +1,9 @@
-let username = "Joe"
-let message = "You have three new notifications"
+let welcomeEl = document.getElementById("welcome-el")
 
-let messageToUser = username +" "+ message
+let name = "Alfred"
+let greeting = "Welcome back "
+let myGreeting = greeting + name
 
-let myName = "My name is Alfred"
-let greetings = "Hello,"
+myGreeting += "👋🏼"
 
-let myGreeting = greetings +"  "+ myName
-console.log(myGreeting)
+welcomeEl.innerText = myGreeting
